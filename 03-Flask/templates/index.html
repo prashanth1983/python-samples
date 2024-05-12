@@ -1,21 +1,29 @@
 <!DOCTYPE html>
-<html>
-    <h2>Enter marks</h2>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Enter Marks</title>
+<link rel="stylesheet" href="{{ url_for('static',filename='css/style.css') }}">
+</head>
 <body>
+<div class="container">
+    <h2>Enter Marks</h2>
     <form action="/submit" method="post">
-       <label for="Science">Science</label>
-       <input type="text" id="science" name="science" value="0">
+        <label for="science">Science</label>
+        <input type="text" id="science" name="science" value="0">
 
-       <label for="Maths">Maths</label>
-       <input type="text" id="maths" name="maths" value="0">
+        <label for="maths">Maths</label>
+        <input type="text" id="maths" name="maths" value="0">
 
-       <label for="C">Science</label>
-       <input type="text" id="c" name="c" value="0">
+        <label for="c">C</label>
+        <input type="text" id="c" name="c" value="0">
 
-       <label for="Datascience">Data Science</label>
-       <input type="text" id="datascience" name="datascience" value="0">
+        <label for="datascience">Data Science</label>
+        <input type="text" id="datascience" name="datascience" value="0">
 
-       <input type="submit" value="Submit">
+        <input type="submit" value="Submit">
     </form>
+</div>
 </body>
 </html>
